@@ -40,14 +40,14 @@ He wrote the first web browser computer program in 1990 while employed at CERN i
 first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
 </p>
 <input id="night_day2" type="button" value="night" onclick="
-    if(document.querySelector('#night_day2').value === 'night'){
+    if(this.value === 'night'){
         document.querySelector('body').style.backgroundColor = 'black';
         document.querySelector('body').style.color = 'white';
-        document.querySelector('#night_day2').value = 'day';                                                       
+        this.value = 'day';                                                       
     } else {   
         document.querySelector('body').style.backgroundColor = 'white';
         document.querySelector('body').style.color = 'black';
-        document.querySelector('#night_day2').value = 'night';
+        this.value = 'night';
     }
 ">
 </body>
