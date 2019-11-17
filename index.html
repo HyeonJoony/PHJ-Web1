@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Welcome</title>
 <script>
-    function setColor(color){
+    function LinksSetColor(color){
 	var alist = document.querySelectorAll('a');
             i = 0;
             while (i<alist.length) {
@@ -19,13 +19,13 @@
             target.style.color = 'white';
             self.value = 'day';
 
-            setColor('powderblue');                                            
+            LinksSetColor('powderblue');                                            
         } else {   
             target.style.backgroundColor = 'white';
             target.style.color = 'black';
             self.value = 'night';
 
-	    setColor('blue');					    
+	    LinksSetColor('blue');					    
         }
     }
 </script>
