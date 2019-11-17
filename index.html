@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <title>Welcome</title>
 <script>
+    function BodySetColor(color){	
+	document.querySelector('body').style.color = 'color';
+	
     function LinksSetColor(color){
 	var alist = document.querySelectorAll('a');
             i = 0;
@@ -16,13 +19,13 @@
 	var target = document.querySelector('body');                                        
 	if(self.value === 'night'){
             target.style.backgroundColor = 'black';
-            target.style.color = 'white';
+            BodySetColor('white');
             self.value = 'day';
 
             LinksSetColor('powderblue');                                            
         } else {   
             target.style.backgroundColor = 'white';
-            target.style.color = 'black';
+            BodySetColor('black');
             self.value = 'night';
 
 	    LinksSetColor('blue');					    
