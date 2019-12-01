@@ -5,7 +5,7 @@ var Body = {
     },
     setBackgroundColor:function(color){
 //        document.querySelector('body').style.backgroundColor = color;
-        $('body').css('backgroundcolor',color);
+        $('body').css('backgroundColor',color);
     }
 }
 var Links = {
