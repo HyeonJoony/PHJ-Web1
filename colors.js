@@ -8,12 +8,13 @@ var Body = {
 }
 var Links = {
     setColor:function(color){
-        var alist = document.querySelectorAll('a');
-            i = 0;
-            while (i<alist.length) {
-	              alist[i].style.color = color;
-	              i = i+1;
-            }
+//         var alist = document.querySelectorAll('a');
+//             i = 0;
+//             while (i<alist.length) {
+// 	              alist[i].style.color = color;
+// 	              i = i+1;
+//             }
+	    &('a').css('color',color);
     }
 }
 function nightdayhandler(self){                                      
